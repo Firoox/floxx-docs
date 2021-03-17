@@ -1,0 +1,27 @@
+site_name: Floxx Dokumentation
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.tabs
+markdown_extensions:
+  - admonition
+  - pymdownx.highlight
+  - pymdownx.superfences:
+      # make exceptions to highlighting of code:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:mermaid2.fence_mermaid
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed
+  - pymdownx.details
+  - def_list
+  - attr_list
+repo_url: https://github.com/Firoox/floxx-docs
+repo_name: Floxx Docs
+plugins:
+  - search
+  - mermaid2
+extra_javascript:
+  - https://unpkg.com/mermaid/dist/mermaid.min.js
